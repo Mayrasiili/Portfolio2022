@@ -9,20 +9,29 @@ import Commissionprices2 from '../assets/CommissionPrices2_Beth.png';
 import KatkonKarhutLogo from '../assets/KatkonKarhut_Logo_Painokuva_1.1.1.png';
 import TheLastHorseman from '../assets/TheLastHorseman.JPG';
 import KunnallisvaaliEsite from '../assets/VaaliEsite_VasLiit_VaronenLauri_1.2.png';
+import BloodGroupManagement from '../assets/BloodGroup.png'
+import PGame from '../assets/PGameDemoImg.png'
 
 function Experience(props) {
     const experience = [
         {
-            name: 'Website development for Bujinkan Sakura Dojo',
-            desc: <> Development of a WordPress-based homepage for a martial arts organization. My role was to provide graphic design elements and to assist in managing the creation of the frontend of the website.
+            name: 'Web development for Bujinkan Sakura Dojo',
+            desc: <>Development of a WordPress-based homepage for a martial arts organization. My role was to provide graphic design elements and to assist in managing the creation of the frontend of the website.
                 <br/><br/><a href="http://www.bujin.fi/">Link to the website.</a></>,
             date: '2021',
             image: BujinkanSakuraDojo,
             icon: 'pi pi-spin pi-server',
             color: 'blue'
         }, {
+            name: 'UI/UX design for Blood Group Donation Management -application',
+            desc: <>Design for a application used to manage blood group donations. My role was to assist in the creation of the UI system and analyze and improve on the graphical elements.</>,
+            date: '2020',
+            image: BloodGroupManagement,
+            icon: 'pi pi-spin pi-server',
+            color: 'blue'
+        }, {
             name: 'UI Design for FSiteShare',
-            desc: <> PHP-based web-gallery application. My role in the project was to oversee UI/UX design to ensure optimal functionality from the user-end perspective.
+            desc: <>PHP-based web-gallery application. My role in the project was to oversee UI/UX design to ensure optimal functionality from the user-end perspective.
                 <br/><br/><a href="https://fsiteshare.rm-studio.fi/index">Link to the application.</a> Username is "guest" and password is "guest". </>,
             date: '2019',
             image: FsiteImage,
@@ -45,10 +54,10 @@ function Experience(props) {
             icon: 'pi pi-spin pi-image',
             color: 'blue'
         }, {
-            name: 'Frontend development and UI/UX/Graphic Design for a game demo',
-            desc: <></>,
+            name: 'Development and UI/UX/Graphic Design for a Game Engine',
+            desc: <>HTML5-based point-and-click - game engine. Executed as an Electron project. My role was to oversee graphic and UI/UX design from the point of view of gaming mechanics and experience.</>,
             date: '2018',
-            image: '',
+            image: PGame,
             icon: 'pi pi-spin pi-server',
             color: 'blue'
         }, {
@@ -59,7 +68,7 @@ function Experience(props) {
             icon: 'pi pi-spin pi-image',
             color: 'blue'
         }, {
-            name: 'Website development for The Last Horseman -webcomic',
+            name: 'Web development for The Last Horseman -webcomic',
             desc: <> Development of a WordPress/ComicPress-based webcomic site 'The Last Horseman'. My role was to adjust and modify the visual and UI -elements of the site to better reflect the content and functionality.
                 <br/><br/><a href="http://thelasthorseman.net/">Link to the website.</a></>,
             date: '2016',
@@ -80,8 +89,8 @@ function Experience(props) {
                     <div>
                         <h3 className="experienceItemHeader">{item.name} </h3>
                         <div className="ingressText experienceYear"> {item.date} </div>
-                        <div><Image preview={true} imageStyle={{maxWidth:'450px'},{maxHeight: '300px'}} src={item.image} alt="" /></div>
-                        <div> {item.desc} </div>
+                        <div><Image preview={true} imageStyle={{maxWidth:'300px', maxHeight: '200px'}} src={item.image} alt="" /></div>
+                        <div className="experienceDesc"> {item.desc} </div>
                     </div>
 
                 </div>
